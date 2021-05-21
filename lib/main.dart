@@ -35,7 +35,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  late var _remoteUid;
+  var _remoteUid;
   late RtcEngine _engine;
 
   @override
@@ -73,8 +73,6 @@ class _HomePageState extends State<HomePage> {
 
     await _engine.joinChannel(token, "channelname", null, 0);
   }
-
-
 
   @override
   Widget build(BuildContext context) {
